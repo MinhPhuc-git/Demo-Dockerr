@@ -1,0 +1,10 @@
+services:
+  web:
+    build:
+      context: .
+      args:
+        NODE_VERSION: "16.20.2"
+    ports:
+      - "127.0.0.1:3000:3000"
+
+
