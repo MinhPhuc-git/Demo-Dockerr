@@ -4,7 +4,10 @@ const app = express();
 const PORT = 3000;
 
 app.get('/', (req, res) => {
-    res.send('Hello from Node.js!');
+    res.json({
+        message: 'Hello from Docker!',
+        node_version: process.version
+    });
 });
 
 app.listen(PORT, () => {
